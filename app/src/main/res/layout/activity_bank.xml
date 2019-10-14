@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.inplus.jigsaw.BankActivity"
+    android:background="#dfdaf1" >
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/backbtn" />
+
+    <ImageView
+        android:id="@+id/exp2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/exp2small"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/exp1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/exp2"
+        android:layout_toLeftOf="@id/exp2"
+        android:src="@drawable/exp1small" />
+
+    <ImageView
+        android:id="@+id/exp3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/exp1"
+        android:layout_toRightOf="@+id/exp2"
+        android:src="@drawable/exp3small" />
+
+    <ImageView
+        android:id="@+id/exp4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/exp1"
+        android:layout_alignLeft="@+id/exp1"
+        android:src="@drawable/exp4small" />
+
+    <ImageView
+        android:id="@+id/exp5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/exp4"
+        android:layout_toRightOf="@+id/exp4"
+        android:src="@drawable/exp5small" />
+
+    <ImageView
+        android:id="@+id/Album"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/exp4"
+        android:layout_toRightOf="@+id/exp5"
+        android:src="@drawable/album" />
+
+
+    <ImageView
+        android:id="@+id/choose"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/choose" />
+
+    <ImageView
+        android:id="@+id/choose2"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/exp5"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/choose2" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/beginGame"
+        android:layout_alignStart="@+id/beginGame"
+        android:layout_below="@+id/choose2"
+        android:entries="@array/level"
+        android:spinnerMode="dropdown" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@id/spinner1"
+        android:layout_alignBottom="@id/spinner1"
+        android:layout_alignEnd="@id/beginGame"
+        android:layout_alignRight="@id/beginGame"
+        android:checked="false"
+        android:text="是否旋转" />
+
+    <ImageView
+        android:id="@+id/beginGame"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/begingame" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.inplus.jigsaw.GameActivity"
+    android:background="#dfdaf1">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColorHint="#000000"
+        android:textSize="40sp" />
+    <Chronometer
+        android:id="@+id/timer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/time"
+        android:layout_toRightOf="@+id/time"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/stop" />
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/time"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_marginRight="0dp"
+        android:src="@drawable/backbtn" />
+
+    <RelativeLayout
+        android:id="@+id/jigsaw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/exp1">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/jigsaw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:src="@drawable/save" />
+
+</RelativeLayout>

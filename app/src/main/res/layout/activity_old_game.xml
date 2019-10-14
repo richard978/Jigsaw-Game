@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.inplus.jigsaw.OldGameActivity"
+    android:background="#dfdaf1">
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/backbtn" />
+
+    <Button
+        android:id="@+id/bt_oldgame"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/backbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="存档"
+        android:textSize="25sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
